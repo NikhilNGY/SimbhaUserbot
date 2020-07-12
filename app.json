@@ -1,0 +1,132 @@
+{
+  "name": "UserBot",
+  "description": "Created By Many Devs,Custom Fork By @Aid_3n",
+  "logo": "https://png.pngtree.com/element_origin_min_pic/07/04/20/16570627b2a83e4.jpg",
+  "keywords": [
+    "telegram",
+    "userbot",
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/Aid-3n/Userbot",
+  "website": "#TODO",
+  "success_url": "#TODO",
+  "env": {
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable heroku.",
+      "value": "ANYTHING"
+    },
+    "TEMP_DOWNLOAD_DIRECTORY": {
+      "description": "Where downloaded files will go.",
+      "value": "./userbot/DOWNLOADS/",
+      "required": false
+    },
+    "APP_ID": {
+      "description": "USE 3rd Party Bot For This @USETGXBOT",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "USE 3rd Party Bot For This @USETGXBOT",
+      "value": ""
+    },
+    "STRING_SESSION": {
+      "description": "Refer Readme For More Info",
+      "value": ""
+    },
+    "GITHUB_ACCESS_TOKEN": {
+      "description": "Your Github Access Token for gitcommit plugin.Google 'Github access token' to find.",
+      "value": "",
+      "required": false
+    },
+    "GIT_REPO_NAME": {
+      "description": "Required If You've Filled GITHUB_ACCESS_TOKEN",
+      "value": "",
+      "required": false
+    },
+    "LYDIA_API_KEY": {
+      "description": "Needed for Lydia AI. Follow https://telegra.ph/Lydia-09-05 to get your API.",
+      "value": "",
+      "required": false
+    },
+    "PRIVATE_GROUP_ID": {
+      "description": "Private Group ID,Used For PMpermit And AFK Get Value After Deploying",
+      "value": "",
+      "required": false
+    },
+    "PRIVATE_GROUP_BOT_API_ID": {
+      "description": "Same Value As PRIVATE_GROUP_ID",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_API_KEY": {
+      "description": "Go to https://dashboard.heroku.com/account, scroll down and press Reveal API.Required for updater to work.",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "The Name You Given In The First Step",
+      "value": "",
+      "required": false
+    },
+    "TG_BOT_TOKEN_BF_HER": {
+      "description": "Get Bot Token From @BOTFATHER",
+      "value": "",
+      "required": true
+    },
+    "CHROME_BIN": {
+      "description": "For Carbon.py. Leave as it is. ",
+      "value": "/app/.apt/usr/bin/google-chrome",
+      "required": false
+    },
+    "CHROME_DRIVER": {
+      "description": "For Carbon.py. Leave as it is. ",
+      "value": "/app/.chromedriver/bin/chromedriver",
+      "required": false
+    },
+    "TG_BOT_USER_NAME_BF_HER": {
+      "description": "Get Bot Username From @BOTFATHER",
+      "value": "",
+      "required": true
+    },
+    "DOWNLOAD_PFP_URL_CLOCK": {
+      "description": "Get The Link By Uploading To Tgraph,Used For Autopic",
+      "value": "",
+      "required": false
+    },
+    "ALIVE_NAME": {
+      "description": "Your Name Or Username",
+      "Value": "@AID_3N",
+      "required": true
+    },
+    "API_TOKEN": {
+      "description": "Get Value From http://antiddos.systems Alternate For Qbot",
+      "value": "",
+      "required": false
+    },
+    "TZ": {
+      "description": "Time-Zone Ex: Asia/Kolkata",
+      "value": "",
+      "required": false
+    }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "9.5"
+    }
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  },{
+    "url":"https://github.com/amivin/aria2-heroku.git"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
+  },{
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  },{
+    "url": "heroku/python"
+  }]
+}
