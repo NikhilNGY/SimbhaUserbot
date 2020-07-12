@@ -22,7 +22,7 @@ async def autopic(event):
     while True:
         shutil.copy(downloaded_file_name, photo)
         im = Image.open(photo)
-        current_time = datetime.now().strftime(" TIME: %H:%M  ⚡⚡@AID_3N⚡⚡   \n DATE: %d/%m/%y ")
+        current_time = datetime.now().strftime(" TIME: %H:%M  ⚡⚡Simbha⚡⚡   \n DATE: %d/%m/%y ")
         img = Image.open(photo)
         drawn_text = ImageDraw.Draw(img)
         fnt = ImageFont.truetype(FONT_FILE_TO_USE, 23)
