@@ -101,7 +101,7 @@
     },
     "ALIVE_NAME": {
       "description": "Your Name Or Username",
-      "Value": "@AID_3N",
+      "Value": "SimbhaUserbot",
       "required": true
     },
     "API_TOKEN": {
@@ -118,7 +118,7 @@
   "addons": [{
     "plan": "heroku-postgresql",
     "options": {
-      "version": "9.5"
+      "version": "12"
     }
   }],
   "buildpacks": [{
