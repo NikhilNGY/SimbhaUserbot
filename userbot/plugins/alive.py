@@ -11,8 +11,6 @@ from userbot.utils import admin_cmd
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
 ALIVE_IMG = "https://telegra.ph/file/bfa4c65c3e51cfe792f62.jpg"
 ALIVE_caption = "`Simbha Userbot IS:` **ONLINE**\n\n"
-ALIVE_caption += "**SYSTEM STATUS**\n\n"
-ALIVE_caption += "`TELETHON VERSION:` **6.0.9**\n`Python:` **3.7.4**\n\n"
 ALIVE_caption += "`DATABASE STATUS:` **Functional**\n\n"
 ALIVE_caption += "**Current Branch** : `master`\n\n"
 ALIVE_caption += "**Simbha  OS** : `3.14`\n\n"
@@ -20,7 +18,6 @@ ALIVE_caption += "**Current Sat** : `Simbha Userbot Sat-2.95`\n\n"
 ALIVE_caption += f"**My Boss** : {DEFAULTUSER} \n\n"
 ALIVE_caption += "**Heroku Database** : `AWS - Working Properly`\n\n"
 ALIVE_caption += "**Bot Made By @NGY_BOT \n\n"
-ALIVE_caption += "Copyright By [NikhilNGY](GitHub.com/NikhilNGY)\n\n"
 ALIVE_caption += "[Deploy SimbhaUserbot](GitHub.com/NikhilNGY/SimbhaUserbot)"
 #@command(outgoing=True, pattern="^.alive$")
 @borg.on(admin_cmd(pattern=r"alive"))
