@@ -56,7 +56,7 @@
     },
     "AUTONAME": {
       "description": "Name Used For .autoname Plugin",
-      "value": "Aid_3n",
+      "value": "SimbhaUserbot",
       "required": false
     },
     "PRIVATE_GROUP_BOT_API_ID": {
