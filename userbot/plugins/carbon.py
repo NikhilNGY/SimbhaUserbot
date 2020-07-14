@@ -152,7 +152,7 @@ async def carbon_api(e):
 
          file,
 
-         caption="<< Here's your carbon, \n Carbonised by [Sensible Userbot](https://www.github.com/midhunkm1294-bit/Sensible Userbot)>> ",
+         caption="<< Here's your carbon, \n Carbonised by [SimbhaUserbot](https://www.github.com/NikhilNGY/SimbhaUserbot)>> ",
 
          force_document=True,
 
@@ -160,7 +160,7 @@ async def carbon_api(e):
 
          )
 
-   os.remove('./Sensible Userbot.png')
+   os.remove('./SimbhaUserbot.jpg')
 
    driver.quit()
 
