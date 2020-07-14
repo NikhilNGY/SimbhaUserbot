@@ -23,10 +23,10 @@ async def genStrSession() -> None:  # pylint: disable=missing-function-docstring
             "Userge",
             api_id=int(os.environ.get("API_ID") or input("Enter Telegram APP ID: ")),
             api_hash=os.environ.get("API_HASH") or input("Enter Telegram API HASH: ")
-    ) as userge:
+    ) as SimbhaUserbot:
         print("\nprocessing...")
-        await userge.send_message(
-            "me", f"#SimbhaUserbot #HU_STRING_SESSION\n\n```{userge.export_session_string()}```")
+        await SimbhaUserbot.send_message(
+            "me", f"#SimbhaUserbot #HU_STRING_SESSION\n\n```{SimbhaUserbot.export_session_string()}```")
         print("Done !, session string has been sent to saved messages!")
 
 if __name__ == "__main__":
