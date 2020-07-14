@@ -20,7 +20,7 @@ if os.path.isfile("config.env"):
 
 async def genStrSession() -> None:  # pylint: disable=missing-function-docstring
     async with Client(
-            "Userge",
+            "SimbhaUserbot",
             api_id=int(os.environ.get("API_ID") or input("Enter Telegram APP ID: ")),
             api_hash=os.environ.get("API_HASH") or input("Enter Telegram API HASH: ")
     ) as SimbhaUserbot:
