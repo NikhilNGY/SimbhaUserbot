@@ -13,7 +13,7 @@ CACHE = {}
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "**No name set yet nibba"
 USER_BOT_WARN_ZERO = "~~Sorry You Don't Have Permission To Talk To Me,Bye~~"
-USER_BOT_NO_WARN = ("Hi Mate,How Are You?   **This An Automated Message Sent By Userbot**"
+USER_BOT_NO_WARN = ("Hi Mate,How Are You?   **This An Automated Message Sent By SimbhaUserbot**"
                     f"\nPlease Check {DEFAULTUSER}'s Bio Or Wait Until My Master Approves You!")
 
 
