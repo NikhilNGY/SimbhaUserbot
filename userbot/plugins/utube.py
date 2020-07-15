@@ -17,14 +17,14 @@ from math import floor
 
 import youtube_dl as ytdl
 
-from userge import userge, Message, Config, pool
+from userge import SimbhaUserbot, Message, Config, pool
 from userge.utils import time_formatter, humanbytes
 from .upload import upload
 
 LOGGER = userge.getLogger(__name__)
 
 
-@userge.on_cmd("ytinfo", about={'header': "Get info from ytdl",
+@SimbhaUserbot.on_cmd("ytinfo", about={'header': "Get info from ytdl",
                                 'description': 'Get information of the link without downloading',
                                 'examples': '{tr}ytinfo link',
                                 'others': 'To get info about direct links, use `{tr}head link`'})
@@ -51,7 +51,7 @@ __{uploader}__
         await message.edit(out)
 
 
-@userge.on_cmd("ytdl", about={'header': "Download from youtube",
+@SimbhaUserbot.on_cmd("ytdl", about={'header': "Download from youtube",
                               'options': {'-a': 'select the audio u-id',
                                           '-v': 'select the video u-id',
                                           '-m': 'extract the mp3 in 320kbps',
@@ -121,7 +121,7 @@ async def ytDown(message: Message):
         await message.edit(str(retcode))
 
 
-@userge.on_cmd("ytdes", about={'header': "Get the video description",
+@SimbhaUserbot.on_cmd("ytdes", about={'header': "Get the video description",
                                'description': 'Get information of the link without downloading',
                                'examples': '{tr}ytdes link'})
 async def ytdes(message: Message):
